@@ -1,0 +1,7 @@
+<% @post.errors.full_messages.each do |message| %>
+    <%= message %>
+<% end %>
+<%= form_tag("/posts/create") do %>
+    <textarea name="content"></textarea>
+    <input type="submit" value="post">
+<% end %>

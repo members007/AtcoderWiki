@@ -1,0 +1,4 @@
+<%= @post.content %>
+<%= @post.created_at %>
+<%= link_to("edit solution", "/posts/#{@post.id}/edit") %>
+<%= link_to("delete solution", "/posts/#{@post.id}/delete", {method: "post"}) %>
